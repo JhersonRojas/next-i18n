@@ -1,0 +1,35 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "printWidth": 90,
+  "singleAttributePerLine": false,
+  "semi": false,
+  "singleQuote": false,
+  "jsxSingleQuote": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "tabWidth": 4,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.tsx",
+      "options": {
+        "tabWidth": 2,
+        "singleQuote": false,
+        "jsxSingleQuote": false,
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2,
+        "singleQuote": false
+      }
+    }
+  ]
+}
