@@ -22,7 +22,7 @@ const dictionarys = {
  * @param locale Referencia del diccionario del idioma solicitado
  */
 export async function getDictionary(locale: Locale) {
-    return dictionarys[locale]?.() ?? dictionarys.en()
+    return dictionarys[locale]?.() ?? dictionarys.es()
 }
 
 export function getLocale(request: NextRequest): string | undefined {

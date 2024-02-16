@@ -3,7 +3,7 @@
  * disponibles en el proyecto
  */
 type I18nConfig = {
-    readonly defaultLocale: "en"
+    readonly defaultLocale: "es"
     readonly locales: readonly ["en", "es"]
 }
 
@@ -12,7 +12,7 @@ type I18nConfig = {
  * los idiomas disponibles
  */
 export const i18n: I18nConfig = {
-    defaultLocale: "en",
+    defaultLocale: "es",
     locales: ["en", "es"],
 }
 
