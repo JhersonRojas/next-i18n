@@ -1,5 +1,96 @@
 {
   "server-component": {
-    "welcome": "Heeeello World!!!"
+    "header": {
+      "title": "Nextjs and i18n",
+      "themes": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      }
+    },
+    "article.one": {
+      "title": "Internationalization (i18n) on Web Pages",
+      "content": "Internationalization, abbreviated as i18n (where 'i' represents the first letter, '18' represents the number of letters between 'i' and 'n,' and 'n' is the last letter), is a process that allows adapting an application or web content to be accessible and usable by users from different regions and cultures. The main goal is to make the content understandable and relevant to audiences worldwide."
+    },
+    "article.two": {
+      "title": "Why is i18n important in web pages?",
+      "content": [
+        {
+          "summary": "Diversity of Audience",
+          "details": "The web is used by people from different parts of the world, speaking different languages and having diverse cultures."
+        },
+        {
+          "summary": "Expansion of Reach",
+          "details": "By internationalizing a web page, the potential reach of the target audience expands."
+        },
+        {
+          "summary": "Regulatory Compliance",
+          "details": "Some countries have specific regulations regarding the presentation of content in their official languages."
+        }
+      ]
+    },
+    "article.three": {
+      "title": "Key Components of i18n",
+      "content": [
+        {
+          "summary": "Localizable Text Strings",
+          "details": [
+            "All visible text strings for the user must be identified as localizable.",
+            "This includes titles, messages, button labels, etc."
+          ]
+        },
+        {
+          "summary": "Number and Date Formats",
+          "details": [
+            "Number, date, and time formats may vary by region. i18n should handle these differences."
+          ]
+        },
+        {
+          "summary": "Images and Multimedia Content",
+          "details": [
+            "Cultural differences should be considered when selecting images and multimedia content."
+          ]
+        },
+        {
+          "summary": "User Language Detection",
+          "details": [
+            "Automatic detection of the user's preferred language can be implemented to present the appropriate localized version."
+          ]
+        }
+      ]
+    },
+    "article.four": {
+      "title": "Using i18n on Web Pages",
+      "content": [
+        {
+          "summary": "Libraries and Frameworks",
+          "details": [
+            "Use libraries and frameworks specialized in i18n, such as gettext, React-Intl, or vue-i18n, which facilitate the management of translations."
+          ]
+        },
+        {
+          "summary": "Translation Files",
+          "details": [
+            "Maintain translation files containing localized versions of text strings for each language."
+          ]
+        },
+        {
+          "summary": "HTML Attributes",
+          "details": [
+            "Use HTML attributes like lang to specify the primary language of the page."
+          ]
+        },
+        {
+          "summary": "Dynamic Language Selection",
+          "details": [
+            "Allow users to choose their preferred language and dynamically adjust the content of the page."
+          ]
+        }
+      ]
+    },
+    "article.five": {
+      "title": "Conclusions",
+      "content": "Internationalization (i18n) is an essential practice for creating inclusive and globally accessible web pages. By effectively implementing i18n, companies and developers can provide a consistent and meaningful user experience, regardless of the user's region or language."
+    }
   }
 }

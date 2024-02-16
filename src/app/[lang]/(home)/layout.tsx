@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
 // Libs
+import { ThemeProvider } from "@/app/providers/theme"
 import { i18n, type Locale } from "@/libs/i18n-config"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -30,8 +31,12 @@ type LayoutHomeProps = Readonly<{
  */
 export default function LayoutHome({ children, params }: LayoutHomeProps): JSX.Element {
   return (
-    <html lang={params.lang}>
-      <body className={inter.className}>{children}</body>
+    <html lang={params.lang} suppressHydrationWarning>
+      <body className={`${inter.className} bg-white dark:bg-zinc-800`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

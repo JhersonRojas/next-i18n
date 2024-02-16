@@ -1,5 +1,96 @@
 {
   "server-component": {
-    "welcome": "Hooola Mundo!!!"
+    "header": {
+      "title": "Nextjs e i18n",
+      "themes": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
+      }
+    },
+    "article.one": {
+      "title": "Internacionalización (i18n) en Páginas Web",
+      "content": "La Internacionalización, abreviada como i18n (donde 'i' representa la primera letra, '18' representa el número de letras entre 'i' y 'n', y 'n' es la última letra), es un proceso que permite adaptar una aplicación o contenido web para que sea accesible y utilizable por usuarios de diferentes regiones y culturas. El objetivo principal es hacer que el contenido sea comprensible y relevante para audiencias de todo el mundo."
+    },
+    "article.two": {
+      "title": "¿Por qué es importante la i18n en páginas web?",
+      "content": [
+        {
+          "summary": "Diversidad de audiencia",
+          "details": "La web es utilizada por personas de diferentes partes del mundo, hablando distintos idiomas y con diversas culturas."
+        },
+        {
+          "summary": "Ampliación del Alcance",
+          "details": "Al internacionalizar una página web, se expande el alcance potencial del público objetivo."
+        },
+        {
+          "summary": "Cumplimiento Normativo",
+          "details": "Algunos países tienen regulaciones específicas sobre la presentación de contenido en sus idiomas oficiales."
+        }
+      ]
+    },
+    "article.three": {
+      "title": "Componentes Clave de i18n",
+      "content": [
+        {
+          "summary": "Cadenas de Texto Localizables",
+          "details": [
+            "Todas las cadenas de texto visibles para el usuario deben ser identificadas como localizables.",
+            "Esto incluye títulos, mensajes, etiquetas de botones, etc."
+          ]
+        },
+        {
+          "summary": "Formato de Números y Fechas",
+          "details": [
+            "Los formatos de números, fechas y horas pueden variar según la región. La i18n debe gestionar estas diferencias."
+          ]
+        },
+        {
+          "summary": "Imágenes y Contenido Multimedia",
+          "details": [
+            "Se deben considerar las diferencias culturales al seleccionar imágenes y contenido multimedia."
+          ]
+        },
+        {
+          "summary": "Detección de Idioma del Usuario",
+          "details": [
+            "Se puede implementar la detección automática del idioma preferido del usuario para presentar la versión localizada adecuada."
+          ]
+        }
+      ]
+    },
+    "article.four": {
+      "title": "Uso de i18n en Páginas Web",
+      "content": [
+        {
+          "summary": "Librerías y Frameworks",
+          "details": [
+            "Utilizar librerías y frameworks especializados en i18n, como gettext, React-Intl, o vue-i18n, que facilitan la gestión de traducciones."
+          ]
+        },
+        {
+          "summary": "Archivos de Traducción",
+          "details": [
+            "Mantener archivos de traducción que contengan las versiones localizadas de las cadenas de texto para cada idioma."
+          ]
+        },
+        {
+          "summary": "Atributos de HTML",
+          "details": [
+            "Utilizar atributos HTML como lang para especificar el idioma principal de la página."
+          ]
+        },
+        {
+          "summary": "Selección Dinámica de Idioma",
+          "details": [
+            "Permitir que los usuarios elijan su idioma preferido y ajustar dinámicamente el contenido de la página."
+          ]
+        }
+      ]
+    },
+    "article.five": {
+      "title": "Conclusiones",
+      "content": "La Internacionalización (i18n) es una práctica esencial para crear páginas web inclusivas y accesibles a nivel global. Al implementar i18n de manera efectiva, las empresas y desarrolladores pueden proporcionar una experiencia de usuario coherente y significativa, independientemente de la región o idioma del usuario."
+    }
   }
 }
